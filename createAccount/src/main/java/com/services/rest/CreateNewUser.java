@@ -41,10 +41,6 @@ public class CreateNewUser {
 		//NewUser nu = new NewUser();
 		//Create User Group LDAP
 		NewUser.createNewUser(email, password);
- 
-		
-		
-		
 		
 		return Response.status(200).entity(output).build();
 	}

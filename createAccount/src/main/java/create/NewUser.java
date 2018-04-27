@@ -29,10 +29,13 @@ public class  NewUser{
 	final static Logger logger = Logger.getLogger(NewUser.class);
 
 	private static applicationProperties prop = new applicationProperties();
-	private static String SQL_DRIVER = "com.mysql.jdbc.Driver";
-	private static String SQL_CONNECTION_STRING = "jdbc:jtds:sqlserver://localhost:1433;databaseName=ephesoft_DemoData";
-	private static String sqlUserName = "sa";
-	private static String SqlPassword = "Demo123";
+	//mysql driver
+	//private static String SQL_DRIVER = "com.mysql.jdbc.Driver";
+	//MS SQL Driver
+	private static String SQL_DRIVER = "net.sourceforge.jtds.jdbc.Driver";
+	private static String DB_NAME = prop.getPropertyValue("DataBaseName");
+	private static String SQL_CONNECTION_STRING = "jdbc:jtds:sqlserver://localhost:1433;databaseName=" + DB_NAME;
+
 	/**
 	 * Basic scripting template that will traverse through a document list and its document level fields.
 	 * Includes instantiated string variables containing the most relevant information from batch xml tags.  
