@@ -25,23 +25,22 @@ public class CreateNewUser {
 		+ "<body>"
 			+ "<div class=\"form-style-5\">"
 			+ "<p style=\"text-align: center;\">"
-		+ "	<img src=\"../images/The_Infor_logo.png\" height=\"82\">"
+		+ "	<img src=\"../images/box.png\" height=\"82\">"
 		+ "	</p>"
 			+ "	<p style=\"text-align: center;\">"
 		+ "	<img src=\"../images/ephesoft-logo.png \" height=\"82\">"
 		+ "	</p>	"
 				+ "<p>Account Successfully Created for: </p>"
 				+ "<p>"+ email +"</p>"
+				+ "<div align=\"center\"><a href=\"/dcma/home.html\">Login Here</a></div>"
 			+ "</div>"
 		+ "</body>"
 		+ "</html>";
-		
-		
+				
 		System.out.println(email);
 		//NewUser nu = new NewUser();
 		//Create User Group LDAP
-		NewUser.createNewUser(email, password);
-		
+		NewUser.createNewUser(email, password);		
 		return Response.status(200).entity(output).build();
 	}
 }

@@ -105,14 +105,14 @@ public class  NewUser{
 			dbConnection = getDBConnection();
 			statement = dbConnection.createStatement();
 			String queryString = "INSERT INTO resource_authorizer(creation_date,last_modified,resource,user_role)"+  
-					"VALUES(CURDATE(),CURDATE(),'BATCH_INSTANCE_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'BATCH_CLASS_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'FOLDER_MANAGEMENT_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'REPORTING_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'BATCH_LIST_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'REVIEW_VALIDATE_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'WEB_SCANNER_SCREEN', '"+SetRole+"'),"+
-					"(CURDATE(),CURDATE(),'UPLOAD_BATCH_SCREEN', '"+SetRole+"');";
+					"VALUES(GETDATE() ,GETDATE() ,'BATCH_INSTANCE_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'BATCH_CLASS_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'FOLDER_MANAGEMENT_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'REPORTING_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'BATCH_LIST_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'REVIEW_VALIDATE_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'WEB_SCANNER_SCREEN', '"+SetRole+"'),"+
+					"(GETDATE() ,GETDATE() ,'UPLOAD_BATCH_SCREEN', '"+SetRole+"');";
 			logger.info(queryString);
 			statement.executeUpdate(queryString);	
 		}          	                	               	
@@ -169,7 +169,7 @@ public class  NewUser{
 			dbConnection = getDBConnection();
 			statement = dbConnection.createStatement();
 
-			String queryString = "INSERT INTO batch_class_groups(creation_date,group_name,batch_class_id)  VALUES(CURDATE(),'" + SetRole + "', '"+ BatchclassID +"');";
+			String queryString = "INSERT INTO batch_class_groups(creation_date,group_name,batch_class_id)  VALUES(GETDATE() ,'" + SetRole + "', '"+ BatchclassID +"');";
 
 			logger.info(queryString);
 			statement.executeUpdate(queryString);	
