@@ -20,16 +20,9 @@ public class mainProgram {
 		//NewUser.createNewUser("Test7", "Password");
 		
 		
-		try {
-			testSql();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		create.email.sendEmail("Chris.macwilliams@ephesoft.com", "Welcome to the Ephesoft Demo Server", "Your User name is  Your password is");
+	
 	}
-	
-	
 	
 	public static void testSql() throws SQLException {
 		Statement stmt = null;

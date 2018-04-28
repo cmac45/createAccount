@@ -41,6 +41,7 @@ public class CreateNewUser {
 		//NewUser nu = new NewUser();
 		//Create User Group LDAP
 		NewUser.createNewUser(email, password);		
+		create.email.sendEmail(email, "Welcome to the Ephesoft Demo Server", "Your User name is " + email +" Your password is " + password);
 		return Response.status(200).entity(output).build();
 	}
 }
