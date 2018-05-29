@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceParams>
+ <Params>
+   <Param>
+     <Name>batchClassName</Name>
+     <Value>Test</Value>
+   </Param>
+   <Param>
+     <Name>batchClassDescription</Name>
+     <Value>test dec</Value>
+   </Param>
+   <Param>
+     <Name>batchClassPriority</Name>
+     <Value>10</Value>
+   </Param>
+    <Param>
+     <Name>batchUNCFolder</Name>
+     <Value>C:\Ephesoft\SharedFolders\WATCHFOLDERS\TESTING</Value>
+   </Param>
+      <Param>
+     <Name>copyBatchClassIdentifier</Name>
+     <Value>BC1</Value>
+   </Param>
+   <Param>
+     <Name>gridWorkflow</Name>
+     <Value>false</Value>
+   </Param>
+ </Params>
+</WebServiceParams>

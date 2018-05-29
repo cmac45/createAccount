@@ -4,7 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mkyong.common</groupId>
 	<artifactId>createAccount</artifactId>
-	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>CreateAccount</name>
 	<url>http://maven.apache.org</url>
@@ -77,4 +76,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	<packaging>war</packaging>
 </project>

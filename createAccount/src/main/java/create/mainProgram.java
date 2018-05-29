@@ -17,10 +17,10 @@ public class mainProgram {
 
 		
 		//Create User Group LDAP
-		//NewUser.createNewUser("Test7", "Password");
+		NewUser.createNewUser("mglaves-demo@box.com", "Ephe$0ft");
 		
 		
-		create.email.sendEmail("Chris.macwilliams@ephesoft.com", "Welcome to the Ephesoft Demo Server", "Your User name is  Your password is");
+		//create.email.sendEmail("Chris.macwilliams@ephesoft.com", "Welcome to the Ephesoft Demo Server", "<p>Your User name is  </p> <p>Your password is</p>");
 	
 	}
 	
